@@ -1,0 +1,84 @@
+.wrapper {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(240, 244, 243, 1);
+    background-color: hsla(170, 15%, 95%, 1);
+}
+
+#navigation {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 15px;
+    float: right;
+    margin: 20px 20px;
+}
+
+button {
+    width: 210px;
+    height: 50px;
+    background-color: #2aa5ec;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.logo {
+    margin: 10px;
+    padding: 10px 10px 10px 0;
+}
+
+.main {
+    background-color: rgba(3, 1, 74, 1);
+    background-color: hsla(241, 95%, 15%, 1);
+    color: white;
+}
+
+.services {
+    margin: 0;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.services h1 {
+    margin-top: 0;
+    text-align: center;
+    padding: 0 0 50px;
+}
+
+aside {
+    width: 300px;
+    height: 600px;
+    background-color: #2aa5ec;
+    margin: 0;
+    padding: 0;
+}
+
+aside h1 {
+    padding-top: 20px;
+    text-align: center;
+}
+
+li {
+    display: inline;
+}
+
+.projects {
+    margin: 20px 0 0 20px;
+    width: 1120px;
+    height: 600px;
+    float: right;
+    background-image: url(../images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.transbox {
+    text-align: center;
+    margin: 30px;
+    background-color: #ffffff;
+    border: 1px solid black;
+    opacity: 0.6;
+}
+
