@@ -9,13 +9,13 @@
         <ul id="navigation">
             <li><button type="button">Home</button></li>
             <li><button type="button">About Us</button></li>
+            <li><button type="button">Projects</button></li>
             <li><button type="button">Services</button></li>
             <li><button type="button">Contact Us</button></li>
         </ul>
         <div class="logo">
             <img src="../images/Facadeline logo.JPG" alt="The company logo" width="400" height="100">
         </div>
-        <div class="wrapper">
             <div class="main">
                 <div class="services">
                     <h1>Services</h1>
@@ -29,19 +29,74 @@
                 </div>
             </div>
             <div class="projects">
-                <div class="transbox">
-                    <h1>Projects</h1>
-                    <ul>
-                        <li></li>
-                    </ul>
+                <h1>Projects</h1>
+               <!-- Slideshow container -->
+                <div class="slideshow-container">
+
+                    <!-- Full-width images with number and caption text -->
+                    <div class="slides fade">
+                       <div class="numbertext">1 / 6</div>
+                          <img src="../images/Beech-House-1200x794-1.jpg" width="1000" height="500" alt="Photo of the first project" style="width:100%">
+                       <div class="text">Project 1</div>
+                    </div>
+                
+                    <div class="slides fade">
+                       <div class="numbertext">2 / 6</div>
+                          <img src="../images/ext (10).jpg" width="1000" height="500" alt="Photo of the second project" style="width:100%">
+                       <div class="text">Project 2</div>
+                    </div>
+                
+                    <div class="slides fade">
+                       <div class="numbertext">3 / 6</div>
+                          <img src="../images/IMG-0323.jpg" width="1000" height="500" alt="Photo of the third project" style="width:100%">
+                       <div class="text">Project 3</div>
+                    </div>
+
+                    <div class="slides fade">
+                        <div class="numbertext">4 / 6</div>
+                           <img src="../images/IMG-5469.jpg" width="1000" height="500" alt="Photo of the fourth project" style="width:100%">
+                        <div class="text">Project 4</div>
+                    </div>
+
+                    <div class="slides fade">
+                        <div class="numbertext">5 / 6</div>
+                           <img src="../images/Photo 03-08-2018, 09 24 40.jpg" width="1000" height="500" alt="Photo of the fifth project" style="width:100%">
+                        <div class="text">Project 5</div>
+                    </div>
+
+                    <div class="slides fade">
+                        <div class="numbertext">6 / 6</div>
+                           <img src="../images/Photo 26-03-2019, 20 19 18.jpg" width="1000" height="500" alt="Photo of the sixth project" style="width:100%">
+                        <div class="text">Project 6</div>
+                    </div>
+                
+                    <!-- Next and previous buttons -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br>
+                <!-- The dots/circles -->
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span> 
+                    <span class="dot" onclick="currentSlide(2)"></span> 
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span> 
+                    <span class="dot" onclick="currentSlide(5)"></span> 
+                    <span class="dot" onclick="currentSlide(6)"></span> 
                 </div>
             </div>
-            <aside>
-                <h1>Profesionalism at its finest</h1>
-                <p>Facade Line is a Stevenage based limited company specialised in facade building.
-                   Established 20 years ago, the company always aims to deliver the best service in the branch and dozens of happy satisfied 
-                customers can prove the company's exelent delivery.</p>
-            </aside>
-        </div> 
+            <footer>
+                <div class="row">
+                    <div class="column" style="background-color:darkblue;">
+                      <h2>Column 1</h2>
+                      <p>Some text..</p>
+                    </div>
+                    <div class="column" style="background-color:darkblue;">
+                      <h2>Column 2</h2>
+                      <p>Some text..</p>
+                    </div>
+                  </div>
+            <script src="../javascript/scripts.js"></script>
+            </footer>
     </body>
 </html>
