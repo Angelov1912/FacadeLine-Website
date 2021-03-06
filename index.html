@@ -1,47 +1,196 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-GB" dir="ltr">
     <head>
-        <title>Facade Line - Cladding and Window Services</title>
+        <title>Home- Facade Line</title>
         <meta charset="utf-8">
-        <link href="../css/styles.css" type="text/css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="../css/styles.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     </head>
     <body>
-        <ul id="navigation">
-            <li><button type="button">Home</button></li>
-            <li><button type="button">About Us</button></li>
-            <li><button type="button">Services</button></li>
-            <li><button type="button">Contact Us</button></li>
-        </ul>
-        <div class="logo">
-            <img src="../images/Facadeline logo.JPG" alt="The company logo" width="400" height="100">
-        </div>
-        <div class="wrapper">
-            <div class="main">
-                <div class="services">
-                    <h1>Services</h1>
-                    <ul>
-                        <li><button type="button">Cladding</button></li>
-                        <li><button type="button">Windows &amp; Doors</button></li>
-                        <li><button type="button">Curtain Walling</button></li>
-                        <li><button type="button">Curtain Wall Repairs</button></li>
-                        <li><button type="button">Shopfronts</button></li>
-                    </ul>
+        <header>
+
+            <!--A top bar with email and telephone for quick access-->
+           <section id="top-bar">
+               <table>
+                   <tr>
+                       <td>
+                           <p>Telephone: +44 (0) 143 841 6848</p>
+                       </td>
+                       <td>
+                        <p>Email Us: <a href="mailto:office@finest-glass.co.uk">office@finest-glass.co.uk</a>
+                       </td>
+                   </tr>    
+                </table>
+           </section>
+
+           <!--This is the top navigation bar-->
+            </div>
+            <div class="top-logo">
+                <img src="../images-copy/Facadeline logo.JPG" alt="Company logo" width="250px" height="60px">
+            </div>
+            <nav>
+                <div class="topnav">
+                    <a href="/html/index.html" class="button">Home</a>
+                    <a href="/html/about.html" class="button">About Us</a>
+                    <a href="/html/services.html" class="button">Services</a>
+                    <a href="/html/projects.html" class="button">Projects</a>
+                    <a href="/html/contact.html" class="button">Contact Us</a>
+                    <input type="text" placeholder="Search...">
+                </div>
+            </nav>
+        </header>
+        <main>
+
+            <!--And introductionary section with a background image taken from one of the company's projects-->
+            <div class="about">
+                <div class="about-description">
+                    <h2>Over 5 Years Of Experiense In The Industry</h2>
+                    <h1>Who Are We?</h1>
+                    <p>Facade Line is well established company specialized in creating custom building facades, cladding and window fitting.</p>
+                    <button>Find Out More</button>
+                </div>
+            </div> 
+
+            <!--This section is for the services that the company offers. dividing into 6 different boxes equally distributed in a table.
+            3 boxes on each row-->
+
+            <!--Row !-->
+            <!--Service 1-->  
+            <div class="services">
+                <h1>Our Services</h1>
+                <div class="row">
+                    <div class="column">
+                        <div class="service1">
+                            <img src="../images-copy/IMG-0323.jpg" alt="picture of cladding of a building" style="width: 100%;">
+                            <div class="text-block">
+                                <h3>Cladding</h3>
+                                <button><span>Find Out More</span></button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!--Service 2-->
+                    <div class="column">
+                        <div class="service2">
+                            <img src="../images-copy/Photo03-08-2018,092553.jpg" alt="photo of curtain Walling" style="width: 100%;">
+                            <div class="text-block">
+                                <h3>Curtain Walling</h3>
+                                <button><span>Find Out More</span></button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!--Service 3-->
+                    <div class="column">
+                        <div class="service3">
+                            <img src="../images-copy/IMG_6338.JPG" alt="photo of windows and doors of a building" style="width: 100%;">
+                            <div class="text-block">
+                                <h3>Windows and Doors</h3>
+                                <button><span>Find Out More</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Row 2-->
+                <!--Service 4-->
+                <div class="row">
+                    <div class="column">
+                        <div class="service4">
+                            <img src="../images-copy/IMG_3018.JPG" alt="photo for curtain wall Repairs" style="width: 100%;">
+                            <div class="text-block">
+                                <h3>Curtain Wall Repairs</h3>
+                                <button><span>Find Out More</span></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Service 5-->
+                    <div class="column">
+                        <div class="service5">
+                            <img src="../images-copy/shopfront.JPG" alt="photo of a shopfront" style="width: 100%;">
+                            <div class="text-block">
+                                <h3>Shopfronts</h3>
+                                <button class="button">Find Out More</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Service 6-->
+                    <div class="column">
+                        <div class="service6">
+                            <img src="../images-copy/rooflights.jpg" alt="photo of rooflights" style="width: 100%;">
+                            <div class="text-block">
+                                <h3>Rooflights</h3>
+                                <button><span>Find Out More</span></button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="projects">
-                <div class="transbox">
-                    <h1>Projects</h1>
-                    <ul>
-                        <li></li>
-                    </ul>
+
+            <!--The Projects section. A qick introductionary to the company's projects with a button that links to all the projects-->
+            <div class="projects-container">
+                <h1>Some of our projects</h1>
+                <div class="projects">
+                    <!--The section is divided in two using a table-->
+                    <table>
+                        <tr>
+                            <td class="left">
+                                <h2>We work on both domestic and commercial projects across England and Wales.</h2>
+                                <p>Our attention to details created exelent professional connections with our clients. The main goal of the company is to deliver
+                                quality service on time and our already finished projects serve as a proof for exelence.
+                                </p>
+                                <button>Explore</button>
+                            </td>
+                            <td class="right">
+                                <div class="project-photo">
+                                    <img src="../images-copy/IMG_3250.JPG" alt="photo of one of the projects" width="100%" height="100%" style="vertical-align: bottom;">
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
                 </div>
+            </div>    
+
+            <!--Add Get a quote form-->
+            <div class="get-a-quote">
+                <h1>Get A Quote</h1>
+                <form action="action_page.php">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Full Name">
+                    <label for="company">Company</label>
+                    <input type="text" id="company" name="company" placeholder="Comopany">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Your Message" style="height: 100px;"></textarea>
+                    <input type="submit" value="Get A Quote">
+                </form>
             </div>
-            <aside>
-                <h1>Profesionalism at its finest</h1>
-                <p>Facade Line is a Stevenage based limited company specialised in facade building.
-                   Established 20 years ago, the company always aims to deliver the best service in the branch and dozens of happy satisfied 
-                customers can prove the company's exelent delivery.</p>
-            </aside>
-        </div> 
+        </main>
+        <footer>
+            <!--Divide the footer into left and right side using a table-->
+            <div class="summary">
+                <table>
+                    <tr>
+                        <td class="left-footer">
+                            <div class="left-footer-content">
+                            <!--Add the company logo-->    
+                            <img src="../images-copy/Facadeline logo.JPG" alt="The company logo" width="200px" height="50px">
+                            <p>Facade Line is well established company specialized in creating custom facades on buildings, cladding and window fitting.</p>
+                            <button>Find Out More</button>
+                            <h2>Get In touch</h2>
+                            <p><strong>Call Us: </strong>+44 (0) 143 841 6848</p>
+                            <p><strong>Email Us: </strong><a href="mailto:office@finest-glass.co.uk" style="color: white; font-size: 16px;">office@finest-glass.co.uk</a>
+                            </div>
+                        </td>
+                        <!--Create an iframe of google maps with the company's address-->
+                        <td class="right-footer">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2460.35380636714!2d-0.19043828421453765!3d51.92749977970635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48762e02e7523e3b%3A0x821f771016b199fb!2s14%20St%20Davids%20Cl%2C%20Stevenage%20SG1%204UZ!5e0!3m2!1sen!2suk!4v1612713630049!5m2!1sen!2suk" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <script src="../javascript/script.js"></script>
+        </footer>
     </body>
 </html>
