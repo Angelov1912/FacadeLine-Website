@@ -1,84 +1,360 @@
-.wrapper {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: rgba(240, 244, 243, 1);
-    background-color: hsla(170, 15%, 95%, 1);
+/* Colors
+Light background- rgb(0, 175, 255)
+Dark blue background- rgb(0, 70, 175)
+about- rgb(3, 190, 247)
+Footer- rgb(40, 50,60) */
+
+/* Images: 
+Cladding- IMG-0323.jpg
+Curtain walling- Photo03-08-2018,092553.jpg
+Windows and doors- IMG_6338.JPG
+Curtain wall repairs- Photo14-12-2018,112449.jpg
+Shopfronts- IMG_3255.JPG
+Rooflights- IMG-3390.jpg */
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(255, 255, 255);
+    overflow-x: hidden;
 }
 
-#navigation {
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 15px;
-    float: right;
-    margin: 20px 20px;
+body {
+    margin: 0;
+    width: 100%;
 }
 
-button {
-    width: 210px;
+main {
+    width: 100%;
+}
+
+/* Style the top bar with email and telephone */
+#top-bar {
+    width: 100%;
+    height: 30px;
+    background-color: rgb(216, 216, 216);
+    margin-bottom: 30px;
+}
+
+#top-bar, td {
+    padding: 0 10px 0 10px;
+}
+
+#top-bar, p {
+    font-size: 14px;
+}
+
+.top-logo {
+    margin: 0 73.4% 0 9.9%;
+}
+
+
+/* Add background to the topnav bar*/
+.topnav {
+    background-color: rgb(0, 70, 175);
+    overflow: hidden;
+    width: 80%;
     height: 50px;
-    background-color: #2aa5ec;
-    border: none;
+    padding: 0;
+    margin: 0 10% 0 10%;
+}
+
+/*Style the buttons in the navbar*/
+.topnav a {
+    float: left;
+    display: block;
     color: white;
-    padding: 15px 32px;
     text-align: center;
+    padding: 14px 16px;
+    font-size: 17px;
     text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
 }
 
-.logo {
-    margin: 10px;
-    padding: 10px 10px 10px 0;
+/* Change color on hover and remove the underlying*/
+.topnav a:hover {
+    background-color: rgb(0, 175, 255);
+    text-decoration: none;
 }
 
-.main {
-    background-color: rgba(3, 1, 74, 1);
-    background-color: hsla(241, 95%, 15%, 1);
+/* Highlight the current page */
+.topnav a.active {
+    background-color: rgb(64, 147, 255);
+}
+
+.topnav input[type=text] {
+    float: right;
+    border: none;
+    width: 30%;
+    margin: 0.25%;
+}
+
+.about {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.411), rgba(0, 0, 0, 0.411)), url(../images-copy/IMG_6334.JPG);
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    height: 680px;
+    /*margin-top: 20px;*/
+    color: rgb(3, 190, 247);
+    font-weight: 400;
+}
+
+.about h2 {
     color: white;
+    font-weight: 900;
+    font-size: 40px;
+}
+
+.about h1 {
+    text-align: left;
+    font-size: 70px;
+    font-weight: 600;
+    color: rgb(3, 190, 247);
+}
+
+.about-description {
+    padding: 50px;
+    font-size: 25px;
+}
+
+.about-description p {
+    font-size: 30px;
+    color: white;
+}
+
+.column {
+    float: left;
+    width: 33.3%;
+    padding: 1%;
+  }
+
+  .row {
+    overflow: hidden;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Clear floats after image containers */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+.services, h1 {
+    padding: 50px 0 50px 0;
+    margin: 0%;
+    color: rgb(0, 70, 175);
 }
 
 .services {
-    margin: 0;
-    padding: 50px 0;
+    width: 80%;
+    margin: 0 10% 0 10%;
+}
+
+/* Container holding the image and the text */
+.service1, .service2, .service3, .service4, .service5, .service6 {
+    position: relative;
+  }
+
+  /* Bottom right text */
+.text-block {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.308);
+    color: white;
+    width: 100%;
+    height: 40%;
+}
+
+.text-block, h1 {
     text-align: center;
 }
 
-.services h1 {
-    margin-top: 0;
-    text-align: center;
-    padding: 0 0 50px;
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid rgb(0, 70, 175);
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    resize: vertical;
 }
 
-aside {
-    width: 300px;
-    height: 600px;
-    background-color: #2aa5ec;
-    margin: 0;
-    padding: 0;
+/*Style the get a quote button */
+input[type=submit] {
+    background-color: rgb(0, 175, 255);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
-aside h1 {
-    padding-top: 20px;
-    text-align: center;
+/* Add darker color on hover */
+input[type=submit]:hover {
+    background-color: rgb(0, 70, 175);
 }
 
-li {
-    display: inline;
+.projects-container {
+    background-color: #f2f2f2;
 }
 
 .projects {
-    margin: 20px 0 0 20px;
-    width: 1120px;
-    height: 600px;
-    float: right;
-    background-image: url(../images/background.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    margin-top: 10px;
+    background-image: linear-gradient(rgb(242, 242, 242), rgb(0, 128, 255));
+    height: 540px;
+    color: rgb(0, 70, 175);
+    margin-bottom: 100px;
 }
 
-.transbox {
-    text-align: center;
-    margin: 30px;
-    background-color: #ffffff;
-    border: 1px solid black;
-    opacity: 0.6;
+.projects .left p {
+    margin-bottom: 100px;
 }
 
+.projects .right {
+    padding: 0;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td {
+    width: 50%;
+    height: 100%;
+}
+
+.left {
+    padding: 3%;
+}
+
+.project-photo img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+/* Style the form */
+.get-a-quote {
+    width: 100%;
+    padding: 20px 20px 100px 20px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: #f2f2f2;
+}
+
+.get-a-quote h1 {
+    padding-top: 0;
+    color: rgb(0, 70, 175);
+}
+
+.get-a-quote form {
+    width: 100%;
+    margin-right: 0;
+    padding: 0 30% 0 30%;
+}
+
+footer {
+    background-color: rgb(40, 50, 60);
+    color: white;
+    padding-bottom: 50px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+iframe {
+   width: 90%;
+   height: 80%;
+   border: 0;
+}
+
+.left-footer-content {
+    text-align: left;
+    padding: 5%;
+}
+
+.left-footer h2 {
+    border-bottom: solid white 2px;
+}
+
+.left-footer img, p {
+    margin-bottom: 20px;
+}
+
+/* Style the buttons */
+button {
+    display: block;
+    width: 40%;
+    height: 40%;
+    border: 1px solid white;
+    color: white;
+    font-size: 1em;
+    background-color: rgba(0, 70, 175, 0.486);
+}
+
+.services button {
+    margin-left: 30%;
+}
+
+.about button {
+    width: 20%;
+    margin: 10% 40% 0 40%;
+    background-color: gba(0, 70, 175, 0.486);
+}
+
+.about button, span {
+    padding: 1% 0 1% 0;
+    color: white;
+}
+
+.left button {
+    background-color: rgba(0, 70, 175, 0.568);
+    font-size: 1.3em;
+    width: 25%;
+    height: 10%;
+    color: white;
+}
+
+.left-footer button {
+    background-color: rgba(79, 149, 255, 0.486);
+    font-size: 1.2em;
+    width: 20%;
+    height: 10%;
+}
+
+/* Add Media Queries */
+@media screen and (max-width: 600px) {
+    .topnav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+
+/* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
+@media screen and (max-width: 600px) {
+    .topnav a, .topnav input[type=text] {
+      float: none;
+      display: block;
+      text-align: left;
+      width: 100%;
+      margin: 0;
+      padding: 14px;
+    }
+    .topnav input[type=text] {
+      border: 1px solid #ccc;
+    }
+  }
