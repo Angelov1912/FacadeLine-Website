@@ -1,0 +1,123 @@
+/* Colors
+Light background- rgb(0, 175, 255)
+Dark blue background- rgb(0, 70, 175)
+Footer- rgb(40, 50,60) */
+
+/* Images: 
+Cladding- IMG-0323.jpg
+Curtain walling- Photo03-08-2018,092553.jpg
+Windows and doors- IMG_6338.JPG
+Curtain wall repairs- Photo14-12-2018,112449.jpg
+Shopfronts- IMG_3255.JPG
+Rooflights- IMG-3390.jpg */
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(255, 255, 255);
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    width: 100%;
+}
+
+main {
+    width: 100%;
+}
+
+/* Style the top bar with email and telephone */
+#top-bar {
+    width: 100%;
+    height: 30px;
+    background-color: rgb(216, 216, 216);
+    margin-bottom: 30px;
+}
+
+#top-bar, td {
+    padding: 0 10px 0 10px;
+}
+
+#top-bar, p {
+    font-size: 14px;
+}
+
+.top-logo {
+    margin: 0 73.4% 0 9.9%;
+}
+
+
+/* Add background to the topnav bar*/
+.topnav {
+    background-color: rgb(0, 70, 175);
+    overflow: hidden;
+    width: 80%;
+    height: 50px;
+    padding: 0;
+    margin: 0 10% 0 10%;
+}
+
+/*Style the buttons in the navbar*/
+.topnav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    font-size: 17px;
+    text-decoration: none;
+}
+
+/* Change color on hover and remove the underlying*/
+.topnav a:hover {
+    background-color: rgb(0, 175, 255);
+    text-decoration: none;
+}
+
+/* Highlight the current page */
+.topnav a.active {
+    background-color: rgb(64, 147, 255);
+}
+
+.topnav input[type=text] {
+    float: right;
+    border: none;
+    width: 30%;
+    margin: 0.25%;
+}
+
+.fixed-services-bg {
+    width: 100%;
+    background-image: linear-gradient(to bottom right, rgb(0, 238, 255), rgb(0, 13, 77));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    min-height: 350px;
+    margin: 0%;
+}
+
+.heading-container {
+    text-align: center;
+    padding-top: 8%;
+    color: rgb(58, 255, 229);
+}
+
+.heading-container h1 {
+    font-size: 80px;
+    margin-top: 0;
+}
+
+.services-container {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images-copy/Photo03-08-2018,092553.jpg);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 900px;
+    margin: 0%;
+}
