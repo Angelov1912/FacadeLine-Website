@@ -11,6 +11,7 @@ Curtain wall repairs- Photo14-12-2018,112449.jpg
 Shopfronts- IMG_3255.JPG
 Rooflights- IMG-3390.jpg */
 
+
 html, body {
     width: 100%;
     height: 100%;
@@ -21,14 +22,6 @@ html, body {
     overflow-x: hidden;
 }
 
-body {
-    margin: 0;
-    width: 100%;
-}
-
-main {
-    width: 100%;
-}
 
 /* Style the top bar with email and telephone */
 #top-bar {
@@ -113,11 +106,131 @@ main {
 }
 
 .services-container {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images-copy/Photo03-08-2018,092553.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images-copy/Photo03-08-2018,092553.jpg);
+    /*box-sizing: border-box;*/
     width: 100%;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    min-height: 900px;
-    margin: 0%;
+    min-height: 1400px;
+    margin-top: -2%;
+}
+
+.content-container {
+    padding: 3%;
+    color: white;
+}
+
+.row {
+    width: 100%;
+    margin: 2% 10% 2% 10%;
+}
+
+.column {
+    width: 50%;
+    padding: 2% 5% 2% 5%;
+    position: relative;
+    float: left;
+}
+
+.text-block {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+    padding: 5%;
+    min-height: 500px;
+    border: solid 1px rgb(0, 175, 255);
+    border-radius: 30px;
+}
+
+.text-block h2 {
+    color: rgb(0, 238, 255);
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 10%;
+    padding-bottom: 2%;
+    border-bottom: solid 2px rgb(0, 238, 255);
+}
+
+.service3 p {
+    margin: 5% 0 7% 0;
+}
+
+.text-block p, ul {
+    font-size: 16px;
+    color: rgb(216, 216, 216);
+}
+
+footer {
+    background-color: rgb(40, 50, 60);
+    color: white;
+    padding: 80px 20px 80px 20px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+.right-footer {
+   width: 50%;
+   height: 100%;
+   border: 0;
+}
+
+iframe {
+    width: 90%;
+}
+
+.left-footer-content {
+    text-align: left;
+    padding: 5%;
+}
+
+.left-footer h2 {
+    border-bottom: solid white 2px;
+}
+
+.left-footer img, p {
+    margin-bottom: 20px;
+}
+
+.left-footer button {
+    background-color: rgba(79, 149, 255, 0.486);
+    font-size: 1.2em;
+    width: 20%;
+    height: 10%;
+}
+
+.get-a-quote {
+    width: 40%;
+    margin: 5% 30% 5% 30%;
+}
+
+.get-a-quote h1 {
+    text-align: center;
+    color: rgb(0, 175, 255);
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid rgb(0, 70, 175);
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    resize: vertical;
+}
+
+/*Style the get a quote button */
+input[type=submit] {
+    background-color: rgb(0, 175, 255);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Add darker color on hover */
+input[type=submit]:hover {
+    background-color: rgb(0, 70, 175);
 }
