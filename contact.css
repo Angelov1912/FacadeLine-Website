@@ -1,0 +1,226 @@
+/* Colors
+Light background- rgb(0, 175, 255)
+Dark blue background- rgb(0, 70, 175)
+Footer- rgb(40, 50,60) */
+
+/* Images: 
+Cladding- IMG-0323.jpg
+Curtain walling- Photo03-08-2018,092553.jpg
+Windows and doors- IMG_6338.JPG
+Curtain wall repairs- Photo14-12-2018,112449.jpg
+Shopfronts- IMG_3255.JPG
+Rooflights- IMG-3390.jpg */
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(255, 255, 255);
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    width: 100%;
+}
+
+main {
+    width: 100%;
+    margin: 0;
+}
+
+/* Style the top bar with email and telephone */
+#top-bar {
+    width: 100%;
+    height: 30px;
+    background-color: rgb(216, 216, 216);
+    margin-bottom: 30px;
+}
+
+#top-bar, td {
+    padding: 0 10px 0 10px;
+}
+
+#top-bar, p {
+    font-size: 14px;
+}
+
+.top-logo {
+    margin: 0 73.4% 0 9.9%;
+}
+
+
+/* Add background to the topnav bar*/
+.topnav {
+    background-color: rgb(0, 70, 175);
+    overflow: hidden;
+    width: 80%;
+    height: 50px;
+    padding: 0;
+    margin: 0 10% 0 10%;
+}
+
+/*Style the buttons in the navbar*/
+.topnav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    font-size: 17px;
+    text-decoration: none;
+}
+
+/* Change color on hover and remove the underlying*/
+.topnav a:hover {
+    background-color: rgb(0, 175, 255);
+    text-decoration: none;
+}
+
+/* Highlight the current page */
+.topnav a.active {
+    background-color: rgb(64, 147, 255);
+}
+
+.topnav input[type=text] {
+    float: right;
+    border: none;
+    width: 30%;
+    margin: 0.25%;
+}
+
+.fixed-contact-bg {
+    width: 100%;
+    background-image: linear-gradient(to bottom right, rgb(0, 238, 255), rgb(0, 13, 77));
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 250px;
+    margin: 0%;
+}
+
+.heading-container {
+    text-align: center;
+    padding-top: 5%;
+    color: rgb(58, 255, 229);
+}
+
+.heading-container h1 {
+    font-size: 80px;
+    margin-top: 0;
+    color: rgb(0, 238, 255);
+}
+
+.main-content {
+    background-color: rgb(216, 216, 216);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images-copy/IMG-3064.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-top: -0.7%;
+    width: 100%;
+    height: 500px;
+}
+
+iframe {
+    width: 50%;
+    height: 400px;
+    padding: 3%;
+    margin-top: 4%;
+}
+
+.info-text {
+    margin-top: 4%;
+    padding: 3%;
+    position: relative;
+    width: 50%;
+    float: right;
+    color: white;
+}
+
+.address, .email, .phone h3 {
+    color: rgb(0, 175, 255);
+}
+
+.address .email .phone, p {
+    color: white;
+}
+
+.get-a-quote {
+    width: 40%;
+    margin: 5% 30% 5% 30%;
+}
+
+.get-a-quote h1 {
+    text-align: center;
+    color: rgb(0, 175, 255);
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid rgb(0, 70, 175);
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    resize: vertical;
+}
+
+/*Style the get a quote button */
+input[type=submit] {
+    background-color: rgb(0, 175, 255);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Add darker color on hover */
+input[type=submit]:hover {
+    background-color: rgb(0, 70, 175);
+}
+
+footer {
+    background-color: rgb(40, 50, 60);
+    color: white;
+    padding: 80px 20px 80px 20px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+.right-footer {
+   width: 50%;
+   height: 100%;
+   border: 0;
+}
+
+footer iframe {
+    width: 90%;
+}
+
+.left-footer-content {
+    text-align: left;
+    padding: 5%;
+}
+
+.left-footer h2 {
+    border-bottom: solid white 2px;
+}
+
+.left-footer img, p {
+    margin-bottom: 20px;
+}
+
+.left-footer button {
+    background-color: rgba(79, 149, 255, 0.486);
+    font-size: 1.2em;
+    width: 20%;
+    height: 10%;
+}
