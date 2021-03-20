@@ -1,0 +1,65 @@
+.footer-content {
+    width: 100%;
+    height: 300px;
+    color: white;
+    font-size: 18px;
+}
+
+.footer-left {
+    width: 50%;
+    height: 100%;
+    float: left;
+    background-color: rgb(124, 124, 124);
+    text-align: center;
+}
+
+.left-text {
+    padding: 3%;
+}
+
+.left-text h3 {
+    margin-bottom: 0;
+}
+
+.left-text p {
+    margin-top: 1%;
+    margin-bottom: 4%;
+}
+
+.left-text a {
+    color: white;
+}
+
+.footer-right {
+    width: 50%;
+    height: 100%;
+    position: relative;
+    float: right;
+    background-color: rgb(51, 51, 51);
+}
+
+.footer-nav a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    margin-top: 3.5%;
+}
+
+.right-text {
+    padding: 5%;
+}
+
+#myBtn {
+    width: 100%;
+    height: 50px;
+    color: white;
+    background-color: rgb(160, 160, 160);
+    font-size: 18px;
+    padding: 0;
+    border: none;
+}
+
+#myBtn:hover {
+    background-color: rgb(100, 100, 100);
+}
