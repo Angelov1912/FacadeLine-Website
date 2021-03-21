@@ -25,18 +25,23 @@ html, body {
 
 /* Style the top bar with email and telephone */
 #top-bar {
+    text-align: center;
     width: 100%;
-    height: 30px;
+    height: 100%;
     background-color: rgb(216, 216, 216);
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 
-#top-bar, td {
+#top-bar td {
+    width: 20%;
     padding: 0 10px 0 10px;
+    border-right: solid black 1px;
 }
 
-#top-bar, p {
-    font-size: 14px;
+#top-bar p {
+    font-size: 15px;
+    margin: 2% 0 2% 0;
+    color: rgb(124, 124, 124);
 }
 
 .top-logo {
@@ -49,19 +54,20 @@ html, body {
     background-color: rgb(0, 70, 175);
     overflow: hidden;
     width: 80%;
-    height: 50px;
+    height: 30%;
     padding: 0;
     margin: 0 10% 0 10%;
 }
 
 /*Style the buttons in the navbar*/
 .topnav a {
+    width: 15%;
     float: left;
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
-    font-size: 17px;
+    padding: 1.2% 2%;
+    font-size: 1.2em;
     text-decoration: none;
 }
 
@@ -71,7 +77,7 @@ html, body {
     text-decoration: none;
 }
 
-/* Highlight the current page */
+/* Highlight the current page
 .topnav a.active {
     background-color: rgb(64, 147, 255);
 }
@@ -81,7 +87,7 @@ html, body {
     border: none;
     width: 30%;
     margin: 0.25%;
-}
+}*/
 
 .fixed-services-bg {
     width: 100%;
@@ -159,46 +165,6 @@ html, body {
     color: rgb(216, 216, 216);
 }
 
-footer {
-    background-color: rgb(40, 50, 60);
-    color: white;
-    padding: 80px 20px 80px 20px;
-}
-
-table {
-    border-collapse: collapse;
-}
-
-.right-footer {
-   width: 50%;
-   height: 100%;
-   border: 0;
-}
-
-iframe {
-    width: 90%;
-}
-
-.left-footer-content {
-    text-align: left;
-    padding: 5%;
-}
-
-.left-footer h2 {
-    border-bottom: solid white 2px;
-}
-
-.left-footer img, p {
-    margin-bottom: 20px;
-}
-
-.left-footer button {
-    background-color: rgba(79, 149, 255, 0.486);
-    font-size: 1.2em;
-    width: 20%;
-    height: 10%;
-}
-
 .get-a-quote {
     width: 40%;
     margin: 5% 30% 5% 30%;
@@ -234,6 +200,3 @@ input[type=submit] {
 input[type=submit]:hover {
     background-color: rgb(0, 70, 175);
 }
-
-
-
