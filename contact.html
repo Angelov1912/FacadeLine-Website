@@ -5,23 +5,27 @@
         <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="../css/contact.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../css/footer.css">
     </head>
     <body>
         <header>
 
-            <!--A top bar with email and telephone for quick access-->
+             <!--A top bar with email and telephone for quick access-->
            <section id="top-bar">
-               <table>
-                   <tr>
-                       <td>
-                           <p>Telephone: +44 (0) 143 841 6848</p>
-                       </td>
-                       <td>
-                        <p>Email Us: <a href="mailto:office@finest-glass.co.uk">office@finest-glass.co.uk</a>
-                       </td>
-                   </tr>    
-                </table>
-           </section>
+            <table>
+                <tr>
+                    <td>
+                        <p>Telephone: +44 (0) 143 841 6848</p>
+                    </td>
+                    <td>
+                     <p>Email Us: <a href="mailto:office@finest-glass.co.uk"> office@finest-glass.co.uk</a>
+                    </td>
+                    <td>
+                        <p>14 St Davids Close, Stevenage, SG1 4UZ</p>
+                    </td>
+                </tr>    
+             </table>
+        </section>
 
            <!--This is the top navigation bar-->
             </div>
@@ -35,12 +39,12 @@
                     <a href="/html/services.html" class="button">Services</a>
                     <a href="/html/projects.html" class="button">Projects</a>
                     <a href="/html/contact.html" class="button">Contact Us</a>
-                    <input type="text" placeholder="Search...">
+                    <!--<input type="text" placeholder="Search...">-->
                 </div>
             </nav>
         </header>
         <main>
-            <div class="fixed-contact-bg">
+            <div class="contact-bg">
                 <div class="heading-container">
                     <h1>Get In Touch</h1>
                 </div>
@@ -63,7 +67,7 @@
                 </div>
             </div>
             <div class="get-a-quote">
-                <h1>Get A Quote</h1>
+                <h1 id="get-a-quote">Get A Quote</h1>
                 <form action="action_page.php">
                     <label for="name">Name</label>
                     <input type="text" id="name" name="name" placeholder="Full Name">
@@ -71,34 +75,45 @@
                     <input type="text" id="company" name="company" placeholder="Comopany">
                     <label for="message">Message</label>
                     <textarea id="message" name="message" placeholder="Your Message" style="height: 100px;"></textarea>
-                    <input type="submit" value="Get A Quote">
+                    <a href="s.angelov1912@gmail.com" class="quote-button">Get A Quote</a>
                 </form>
             </div>
         </main>
         <footer>
-            <!--Divide the footer into left and right side using a table-->
-            <div class="summary">
-                <table>
-                    <tr>
-                        <td class="left-footer">
-                            <div class="left-footer-content">
-                            <!--Add the company logo-->
-                            <img src="../images-copy/Facadeline logo.JPG" alt="The company logo" width="200px" height="50px">
-                            <p>Facade Line is well established company specialized in creating custom facades on buildings, cladding and window fitting.</p>
-                            <button>Find Out More</button>
-                            <h2>Get In touch</h2>
-                            <p><strong>Call Us: </strong>+44 (0) 143 841 6848</p>
-                            <p><strong>Email Us: </strong><a href="mailto:office@finest-glass.co.uk" style="color: white; font-size: 16px;">office@finest-glass.co.uk</a>
-                            </div>
-                        </td>
-                        <!--Create an iframe of google maps with the company's address-->
-                        <td class="right-footer">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2460.35380636714!2d-0.19043828421453765!3d51.92749977970635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48762e02e7523e3b%3A0x821f771016b199fb!2s14%20St%20Davids%20Cl%2C%20Stevenage%20SG1%204UZ!5e0!3m2!1sen!2suk!4v1612713630049!5m2!1sen!2suk" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-                        </td>
-                    </tr>
-                </table>
+            <div class="footer-content">
+                <div class="footer-left">
+                    <div class="left-text">
+                        <div class="address">
+                            <h3>Address</h3>
+                            <p>14 St Davids Close, Stevenage, SG1 4UZ</p>
+                        </div>
+                        <div class="email">
+                            <h3>Email</h3>
+                            <p><a href="mailto:office@finest-glass.co.uk" style="font-size: 16px;">office@finest-glass.co.uk</a></p>
+                        </div>
+                        <div class="phone">
+                            <h3>Phone</h3>
+                            <p>+44 (0) 143 841 6848</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-right">
+                    <div class="right-text">
+                        <div class="footer-nav">
+                        <a href="/html/index.html" class="button">Home</a>
+                        <a href="/html/about.html" class="button">About Us</a>
+                        <a href="/html/services.html" class="button">Services</a>
+                        <a href="/html/projects.html" class="button">Projects</a>
+                        <a href="/html/contact.html" class="button">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="back-to-top">
+                    <button onclick="topFunction()" id="myBtn" title="Go to top">Back To Top</button>
+                </div>
             </div>
-            <script src="../javascript/script.js"></script>
         </footer>
+        <script src="../javascript/script.js"></script>
+        <script src="../javascript/footer.js"></script>
     </body>
 </html>
