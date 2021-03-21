@@ -1,3 +1,16 @@
+/* Colors
+Light background- rgb(0, 175, 255)
+Dark blue background- rgb(0, 70, 175)
+Footer- rgb(40, 50,60) */
+
+/* Images: 
+Cladding- IMG-0323.jpg
+Curtain walling- Photo03-08-2018,092553.jpg
+Windows and doors- IMG_6338.JPG
+Curtain wall repairs- Photo14-12-2018,112449.jpg
+Shopfronts- IMG_3255.JPG
+Rooflights- IMG-3390.jpg */
+
 html, body {
     width: 100%;
     height: 100%;
@@ -18,19 +31,25 @@ main {
 }
 
 /* Style the top bar with email and telephone */
+
 #top-bar {
+    text-align: center;
     width: 100%;
-    height: 30px;
+    height: 100%;
     background-color: rgb(216, 216, 216);
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 
-#top-bar, td {
+#top-bar td {
+    width: 20%;
     padding: 0 10px 0 10px;
+    border-right: solid black 1px;
 }
 
-#top-bar, p {
-    font-size: 14px;
+#top-bar p {
+    color: rgb(124, 124, 124);
+    font-size: 15px;
+    margin: 2% 0 2% 0;
 }
 
 .top-logo {
@@ -43,19 +62,20 @@ main {
     background-color: rgb(0, 70, 175);
     overflow: hidden;
     width: 80%;
-    height: 50px;
+    height: 30%;
     padding: 0;
     margin: 0 10% 0 10%;
 }
 
 /*Style the buttons in the navbar*/
 .topnav a {
+    width: 15%;
     float: left;
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
-    font-size: 17px;
+    padding: 1.2% 2%;
+    font-size: 1.2em;
     text-decoration: none;
 }
 
@@ -66,16 +86,16 @@ main {
 }
 
 /* Highlight the current page */
-.topnav a.active {
+.topnav a:active {
     background-color: rgb(64, 147, 255);
 }
 
-.topnav input[type=text] {
+/*.topnav input[type=text] {
     float: right;
     border: none;
     width: 30%;
     margin: 0.25%;
-}
+}*/
 
 .fixed-about-bg {
     width: 100%;
@@ -141,51 +161,19 @@ main {
 }
 
 .about-info .button {
-    background-color: rgb(216, 216, 216);
+    background: transparent;
+    text-align: center;
+    font-size: 20px;
+    color: rgb(124, 124, 124);
+    text-decoration: none;
     border: solid black 2px;
     display: block;
     width: 20%;
     height: 10%;
     padding: 1% 2% 1% 2%;
-    margin: 0 40% 10% 40%;
+    margin: 1% 40% 5% 40%;
 }
 
-footer {
-    background-color: rgb(40, 50, 60);
-    color: white;
-    padding-bottom: 50px;
-}
-
-table {
-    border-collapse: collapse;
-}
-
-.right-footer {
-   width: 50%;
-   height: 100%;
-   border: 0;
-}
-
-iframe {
-    width: 90%;
-}
-
-.left-footer-content {
-    text-align: left;
-    padding: 5%;
-}
-
-.left-footer h2 {
-    border-bottom: solid white 2px;
-}
-
-.left-footer img, p {
-    margin-bottom: 20px;
-}
-
-.left-footer button {
-    background-color: rgba(79, 149, 255, 0.486);
-    font-size: 1.2em;
-    width: 20%;
-    height: 10%;
+.about-info .button:hover {
+    background-color:  rgba(100, 100, 100, 0.5);
 }
