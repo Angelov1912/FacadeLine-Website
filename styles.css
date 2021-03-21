@@ -17,7 +17,7 @@ html, body {
     height: 100%;
     margin: 0;
     padding: 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Georgia, serif;
     background-color: rgb(255, 255, 255);
     overflow-x: hidden;
 }
@@ -29,26 +29,32 @@ body {
 
 main {
     width: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-/* Style the top bar with email and telephone */
+/*Style the top bar with email and telephone*/
 #top-bar {
+    text-align: center;
     width: 100%;
-    height: 30px;
+    height: 100%;
     background-color: rgb(216, 216, 216);
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 
-#top-bar, td {
+#top-bar td {
+    width: 20%;
     padding: 0 10px 0 10px;
+    border-right: solid black 1px;
 }
 
-#top-bar, p {
-    font-size: 14px;
+#top-bar p {
+    font-size: 15px;
+    margin: 2% 0 2% 0;
+    color: rgb(124, 124, 124);
 }
 
 .top-logo {
-    margin: 0 73.4% 0 9.9%;
+    margin: 2% 73.4% 0 9.9%;
 }
 
 
@@ -57,19 +63,20 @@ main {
     background-color: rgb(0, 70, 175);
     overflow: hidden;
     width: 80%;
-    height: 50px;
+    height: 30%;
     padding: 0;
     margin: 0 10% 0 10%;
 }
 
 /*Style the buttons in the navbar*/
 .topnav a {
+    width: 15%;
     float: left;
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
-    font-size: 17px;
+    padding: 1.2% 2%;
+    font-size: 1.2em;
     text-decoration: none;
 }
 
@@ -79,8 +86,8 @@ main {
     text-decoration: none;
 }
 
-/* Highlight the current page */
-.topnav a.active {
+/* Highlight the current page
+.topnav a:active {
     background-color: rgb(64, 147, 255);
 }
 
@@ -89,9 +96,10 @@ main {
     border: none;
     width: 30%;
     margin: 0.25%;
-}
+}*/
 
 .about {
+    width: 100%;
     background-image: linear-gradient(rgba(0, 0, 0, 0.411), rgba(0, 0, 0, 0.411)), url(../images-copy/IMG_6334.JPG);
     background-attachment: fixed;
     background-size: 100% 100%;
@@ -131,7 +139,6 @@ main {
   }
 
   .row {
-    overflow: hidden;
     padding: 0;
     margin: 0;
   }
@@ -166,11 +173,21 @@ main {
     background-color: rgba(0, 0, 0, 0.308);
     color: white;
     width: 100%;
-    height: 40%;
+    height: 50%;
 }
 
 .text-block, h1 {
     text-align: center;
+}
+
+.get-a-quote {
+    width: 40%;
+    margin: 5% 30% 5% 30%;
+}
+
+.get-a-quote h1 {
+    text-align: center;
+    color: rgb(0, 175, 255);
 }
 
 input[type=text], select, textarea {
@@ -184,23 +201,31 @@ input[type=text], select, textarea {
     resize: vertical;
 }
 
-/*Style the get a quote button */
-input[type=submit] {
+.quote-button {
+    width: 30%;
+    height: 15%;
+    text-align: center;
+    display: block;
     background-color: rgb(0, 175, 255);
     color: white;
     padding: 12px 20px;
+    margin-top: 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    text-decoration: none;
 }
 
 /* Add darker color on hover */
-input[type=submit]:hover {
+.quote-button:hover {
     background-color: rgb(0, 70, 175);
+    color: white;
+    text-decoration: none;
 }
 
 .projects-container {
     background-color: #f2f2f2;
+    width: 100%;
 }
 
 .projects {
@@ -255,9 +280,8 @@ td {
 .get-a-quote {
     width: 100%;
     padding: 5% 0 10% 0;
-    margin: auto;
+    margin: 0;
     overflow: hidden;
-    border-radius: 10px;
     background-color: #f2f2f2;
 }
 
@@ -272,77 +296,49 @@ td {
     padding: 0 30% 0 30%;
 }
 
-footer {
-    background-color: rgb(40, 50, 60);
-    color: white;
-    padding: 80px 20px 80px 20px;
-}
-
-table {
-    border-collapse: collapse;
-}
-
-iframe {
-   width: 90%;
-   height: 80%;
-   border: 0;
-}
-
-.left-footer-content {
-    text-align: left;
-    padding: 5%;
-}
-
-.left-footer h2 {
-    border-bottom: solid white 2px;
-}
-
-.left-footer img, p {
-    margin-bottom: 20px;
-}
-
-/* Style the buttons */
-button {
+.about .button {
     display: block;
-    width: 40%;
-    height: 40%;
-    border: 1px solid white;
-    color: white;
-    font-size: 1em;
-    background-color: rgba(0, 70, 175, 0.486);
-}
-
-.services button {
-    margin-left: 30%;
-}
-
-.about button {
-    width: 20%;
-    margin: 10% 40% 0 40%;
-    background: transparent;
-    border: solid 2px white;
-}
-
-.about button, span {
-    padding: 1% 0 1% 0;
-    color: white;
-    font-weight: 600;
-}
-
-.left button {
-    background: transparent;
-    font-size: 1.3em;
+    text-align: center;
     width: 30%;
-    height: 13%;
+    height: 11%;
+    margin: 1% 35% 1% 35%;
+    padding: 1%;
     color: white;
-    border: solid 2px white;
+    background: transparent;
+    text-decoration: none;
+    font-size: 2em;
+    font-weight: 400;
+    border: solid 1px white;
 }
 
-.left-footer button {
-    background-color: rgba(79, 149, 255, 0.486);
+main .button:hover {
+    background-color: rgba(0, 174, 255, 0.5);
+}
+
+.services .button {
+    display: block;
+    width: 60%;
+    color: white;
+    padding: 3%;
+    margin: 2% 20% 10% 20%;
+    text-decoration: none;
     font-size: 1.2em;
-    width: 20%;
-    height: 10%;
+    border: solid white 1px;
+}
+
+.left .button {
+    background: transparent;
+    font-size: 1.5em;
+    width: 50%;
+    color: white;
+    border: solid 1px white;
+    padding: 3%;
+    text-decoration: none;
+}
+
+.left .button:hover {
+    background-color: rgba(0, 174, 255, 0.5);
+
 }
 
 /* Add Media Queries */
